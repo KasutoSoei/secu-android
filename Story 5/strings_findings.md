@@ -1,7 +1,5 @@
 Analyse de Sécurité : strings_findings.md
 
-Tableau des vulnérabilités identifiées
-
 google_api_key: AIzaSyBTgztvImsUfMWDa41PCrDWAj7dmyIDhUg
 Exploitation financière & Quotas. Utilisation frauduleuse des services Google Cloud facturés au client si la clé n'est pas restreinte par empreinte SHA-1.
 
@@ -15,4 +13,4 @@ PUSHWOOSH_APPID: DDF11-D1BF9
 Usurpation de Notifications. Permet à un tiers de détourner le service de push pour envoyer des messages de phishing directement aux utilisateurs de l'application.
 
 ENVIRONMENT: production	
-Fuite de contexte. Confirme que l'APK cible l'environnement réel. Utile pour un attaquant pour valider qu'il travaille sur des données sensibles et non de test.
+Fuite de contexte. Confirme que l'APK cible l'environnement réel, et permet donc à l'attaquant de valider qu'il travaille sur des données sensibles et non de test.
