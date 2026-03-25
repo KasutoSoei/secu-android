@@ -1,0 +1,28 @@
+﻿STORY 9 : 
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+Accès public /.json = URL inaccessible.
+Fuite de données Firebase = Non exploitable en état
+Bien que la base Firebase ne soit pas directement accessible, les éléments suivants restent préoccupants :
+* L'URL Firebase est exposée en clair dans le code source, ce qui facilite la reconnaissance.
+* La clé API Google est en clair et potentiellement non restreinte
+* Le PUSHWOOSH_APPID exposé permet potentiellement l'envoi de notifications frauduleuses
+* L'endpoint API Nickel exposé révèle l'infrastructure backend
+Suite à cela, nous avons quelques recommandations :
+* Supprimer ou obfusquer les URLs et clés sensibles du code source
+* Restreindre la google_api_key par certificat SHA-1 dans la console Google Cloud
+* Configurer des Firebase Security Rules strictes (même si la base semble inactive)
+* Implémenter le principe du moindre privilège sur chaque service exposé
+* Utiliser des variables d'environnement côté serveur plutôt que des clés en dur dans l'APK
