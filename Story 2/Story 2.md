@@ -1,0 +1,15 @@
+﻿STORY 2 : 
+
+
+
+
+Il y a 3 vulnérabilités : 
+* MinSDK 19 (Android 4.4) = trop ancien, plus de correctifs de sécurité
+* Trafic en clair autorisé (usesCleartextTraffic=true) = risque d'interception MitM
+* Logs en production = fuite possible de données sensibles
+* Il y a également des permissions très dangereuses : 
+
+
+* READ_CONTACTS = Lecture de tous les contacts du téléphone
+* WRITE_EXTERNAL_STORAGE = Lecture/modification/suppression du stockage externe
+* USE_FINGERPRINT (deprecated) = Devrait utiliser USE_BIOMETRIC à la place

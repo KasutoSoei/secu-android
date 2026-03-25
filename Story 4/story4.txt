@@ -1,9 +1,0 @@
-﻿STORY 4 : 
-
-
-
-
-La commande utilisée : apktool d app.apk -o app_src/
-Le dossier app_src/ obtenu contient 12 688 fichiers pour un total d'environ 104 Mo décompressés. On y retrouve notamment le AndroidManifest.xml en clair, le fichier de configuration apktool.yml, les assets (polices, propriétés Crashlytics), les ressources (layouts, drawables, values), ainsi que le code smali décompilé.
-Le dossier est livré sous forme d'archive zippée (app_src.zip — 30 MB). SHA256 : ea1384271fc4d57838acf9e2f172e721e9ad32572baa359da07c57287c2060b2
-Ce livrable permet d'analyser en détail les ressources, les configurations et le code smali pour identifier des secrets exposés ou des mauvaises configurations de sécurité.

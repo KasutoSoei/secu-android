@@ -1,6 +1,6 @@
-- mdp clé : Key1234
+Mot de passe clé : Key1234
 
-log to verify if apk is signed :
+Log de la vérification de si la clé est bien signée :
 
 apksigner verify --verbose signed_app.apk
 
